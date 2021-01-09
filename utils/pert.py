@@ -153,14 +153,6 @@ class PERTGraph:
     
     sal.addOutEdge(p_edge)
     ent.addIncEdge(p_edge)
-    
-    #self.edges[p_node] = []
-    
-    # anexamos sus correspondientes elementos en la lista de adyacencia
-    #for incoming in p_node.prec:
-      # en caso de no tener elementos precedentes, la lista es vacía
-      #self.edges[incoming].append(p_node)
-      # no debería haber error pues consideramos que se anexan secuencialmente
       
       
   def calculateTEarly(self):
@@ -198,4 +190,9 @@ class PERTGraph:
     '''
     for nodito in self.nodes:
       nodito.printNode()
-
+  
+  def importCSV(self, path2csv):
+    '''
+    método para importar info de un CSV
+    '''
+    
